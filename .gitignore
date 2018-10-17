@@ -1,0 +1,6 @@
+target
+*.iws
+*.pyc
+*.o
+*.class
+*.DS_Store

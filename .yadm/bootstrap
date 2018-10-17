@@ -1,0 +1,9 @@
+#!/bin/bash
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    ${DIR}/bootstrap-linux.sh
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    ${DIR}/bootstrap-mac.sh
+fi
