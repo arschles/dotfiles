@@ -16,3 +16,4 @@ sudo snap install vscode --classic
 gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'firefox_dev.desktop', 'slack_slack.desktop', 'code.desktop', 'org.gnome.Terminal.desktop', 'gnome-control-center.desktop', 'software-properties-gtk.desktop', 'org.gnome.Software.desktop']"
 
 cp ./aliases-linux.sh ~/.aliases
+source ~/.aliases
