@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt-get update
-sudo apt-get install git mercurial zsh direnv xclip
+sudo apt-get install git mercurial zsh direnv xclip gnome-tweaks-tools net-tools
 chsh -s /bin/zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
