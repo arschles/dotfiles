@@ -12,4 +12,5 @@ brew bundle
 chsh -s /bin/zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+# install vscode settings
 cat ./vscode.json > $HOME/Library/Application\ Support/Code/User/settings.json

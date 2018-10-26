@@ -106,6 +106,8 @@ alias ksys="kubectl --namespace=kube-system"
 alias vbm="vboxmanage"
 alias hug="hub"
 alias codehub="code . && github ."
+# https://askubuntu.com/a/473770
+alias clr="clear && printf '\e[3J'"
 
 export PATH=$PATH:$PATH/bin:$HOME/bin$HOME/kubernetes/cluster:$HOME/gsutil:$GOROOT/bin
 
