@@ -108,6 +108,8 @@ alias hug="hub"
 alias codehub="code . && github ."
 # https://askubuntu.com/a/473770
 alias clr="clear && printf '\e[3J'"
+# nuke the go modules cache
+alias rmgc="sudo rm -rf $GOPATH/pkg/mod"
 
 export PATH=$PATH:$PATH/bin:$HOME/bin$HOME/kubernetes/cluster:$HOME/gsutil:$GOROOT/bin
 
@@ -115,7 +117,7 @@ export PATH=$PATH:$PATH/bin:$HOME/bin$HOME/kubernetes/cluster:$HOME/gsutil:$GORO
 export GOPATH=$HOME/gocode
 export GOSRC=$GOPATH/src
 export GO111MODULE=on
-export GOPROXY=https://athens-ukiespgiyz.now.sh
+export GOPROXY=https://http://microsoftgoproxy.azurewebsites.net/
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=/Users/aaschles/.nimble/bin:$PATH
