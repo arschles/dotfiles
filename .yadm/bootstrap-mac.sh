@@ -11,3 +11,5 @@ brew bundle
 # change to zsh and use oh-my-zsh
 chsh -s /bin/zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+cat ./vscode.json > $HOME/Library/Application\ Support/Code/User/settings.json

@@ -1,0 +1,42 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontSize": 13,
+    "editor.wordWrap": "off",
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.detectIndentation": true,
+    "editor.rulers": [
+        100,
+        80
+    ],
+    "editor.renderWhitespace": "all",
+    "editor.renderIndentGuides": false,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.enabled": false,
+    "explorer.openEditors.visible": 0,
+    "workbench.editor.enablePreview": false,
+    "files.insertFinalNewline": true,
+    "go.lintOnSave": "package",
+    "go.vetOnSave": "package",
+    "go.formatTool": "goimports",
+    "go.formatOnSave": true,
+    "editor.scrollBeyondLastLine": false,
+    "editor.selectionHighlight": false,
+    // "editor.renderWhitespace": "boundary",
+    "editor.renderControlCharacters": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        ".glide/**": true
+    },
+    "window.openFoldersInNewWindow": "on",
+    "workbench.iconTheme": "material-icon-theme",
+    "window.zoomLevel": 2,
+    "azure.resourceFilter": [
+        "72f988bf-86f1-41af-91ab-2d7cd011db47/5ea9ae04-3601-468a-ba84-cb7e82ae1e48"
+    ],
+    "html.format.enable": false
+}
