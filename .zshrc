@@ -109,7 +109,9 @@ alias codehub="code . && github ."
 # https://askubuntu.com/a/473770
 alias clr="clear && printf '\e[3J'"
 # nuke the go modules cache
-alias rmgc="sudo rm -rf $GOPATH/pkg/mod"
+alias rm-gocache="sudo rm -rf $GOPATH/pkg/mod"
+# nuke docker thingies
+alias docker-prune="docker image prune && docker network prune && docker volume prune"
 
 export PATH=$PATH:$PATH/bin:$HOME/bin$HOME/kubernetes/cluster:$HOME/gsutil:$GOROOT/bin
 
