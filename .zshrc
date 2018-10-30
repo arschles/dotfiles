@@ -120,8 +120,8 @@ export GOPATH=$HOME/gocode
 export GOSRC=$GOPATH/src
 export GO111MODULE=on
 export GOPROXY=https://athens.azurefd.net/
-export GOROOT=/usr/local/opt/go/libexec
-export PATH=$PATH:$GOPATH/bin
+export PATH=$GOPATH/bin:$PATH
+export PATH=/usr/bin/go/bin:$PATH
 export PATH=/Users/aaschles/.nimble/bin:$PATH
 
 # k8s env vars
