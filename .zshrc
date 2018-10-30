@@ -111,7 +111,7 @@ alias clr="clear && printf '\e[3J'"
 # nuke the go modules cache
 alias rm-gocache="sudo rm -rf $GOPATH/pkg/mod"
 # nuke docker thingies
-alias docker-prune="docker image prune && docker network prune && docker volume prune"
+alias docker-prune="docker image prune && docker system prune"
 
 export PATH=$PATH:$PATH/bin:$HOME/bin$HOME/kubernetes/cluster:$HOME/gsutil:$GOROOT/bin
 
