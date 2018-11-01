@@ -123,6 +123,7 @@ export GOPROXY=https://athens.azurefd.net/
 export PATH=$GOPATH/bin:$PATH
 export PATH=/usr/bin/go/bin:$PATH
 export PATH=/Users/aaschles/.nimble/bin:$PATH
+export DOCKER_BUILDKIT=1
 
 # k8s env vars
 export KUBERNETES_PROVIDER=vagrant
