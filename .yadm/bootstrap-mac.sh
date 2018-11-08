@@ -6,7 +6,7 @@
 brew install mercurial
 brew install git
 brew tap "homebrew/bundle"
-brew bundle
+brew bundle --file=~/.yadm/Brewfile
 
 # change to zsh and use oh-my-zsh
 chsh -s /bin/zsh
