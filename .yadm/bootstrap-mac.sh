@@ -6,6 +6,7 @@
 brew install mercurial
 brew install git
 brew tap "homebrew/bundle"
+brew tap "azure/draft"
 brew bundle --file=~/.yadm/Brewfile
 
 # change to zsh and use oh-my-zsh
