@@ -1,6 +1,5 @@
 brew "asciinema"
 brew "azure-cli"
-brew "azure-functions-core-tools"
 brew "direnv"
 brew "doitlive"
 brew "go"
