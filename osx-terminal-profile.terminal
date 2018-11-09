@@ -42,7 +42,7 @@
 	<data>
 	YnBsaXN0MDDUAQIDBAUGGBlYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
 	AAGGoKQHCBESVSRudWxs1AkKCwwNDg8QVk5TU2l6ZVhOU2ZGbGFnc1ZOU05hbWVWJGNs
-	YXNzI0AyAAAAAAAAEBCAAoADW1NGTW9uby1Cb2xk0hMUFRZaJGNsYXNzbmFtZVgkY2xh
+	YXNzI0A5AAAAAAAAEBCAAoADW1NGTW9uby1Cb2xk0hMUFRZaJGNsYXNzbmFtZVgkY2xh
 	c3Nlc1ZOU0ZvbnSiFRdYTlNPYmplY3RfEA9OU0tleWVkQXJjaGl2ZXLRGhtUcm9vdIAB
 	CBEaIy0yNzxCS1JbYmlydHZ4hImUnaSnsMLFygAAAAAAAAEBAAAAAAAAABwAAAAAAAAA
 	AAAAAAAAAADM
@@ -61,6 +61,16 @@
 	TlNPYmplY3RfEA9OU0tleWVkQXJjaGl2ZXLRFxhUcm9vdIABCBEaIy0yNztBSFBdZHBy
 	dHmEjZWYobO2uwAAAAAAAAEBAAAAAAAAABkAAAAAAAAAAAAAAAAAAAC9
 	</data>
+	<key>ShowActivityIndicatorInTab</key>
+	<true/>
+	<key>ShowComponentsWhenTabHasCustomTitle</key>
+	<true/>
+	<key>ShowShellCommandInTitle</key>
+	<false/>
+	<key>ShowTTYNameInTabTitle</key>
+	<false/>
+	<key>ShowTerminalInDockIcon</key>
+	<true/>
 	<key>ShowWindowSettingsNameInTitle</key>
 	<false/>
 	<key>TextBoldColor</key>
