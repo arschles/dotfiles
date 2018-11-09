@@ -20,7 +20,16 @@
     "go.lintOnSave": "package",
     "go.vetOnSave": "package",
     "go.formatTool": "goimports",
-    "go.formatOnSave": true,
+    "go.gotoSymbol.includeImports": true,
+    "go.languageServerExperimentalFeatures": {
+        "format": false,
+        "autoComplete": true
+    },
+    "go.liveErrors": {
+        "enabled": true,
+        "delay": 500
+    },
+    "go.useCodeSnippetsOnFunctionSuggest": true,
     "editor.scrollBeyondLastLine": false,
     "editor.selectionHighlight": false,
     // "editor.renderWhitespace": "boundary",
@@ -35,9 +44,6 @@
     "window.openFoldersInNewWindow": "on",
     "workbench.iconTheme": "material-icon-theme",
     "window.zoomLevel": 2,
-    "azure.resourceFilter": [
-        "72f988bf-86f1-41af-91ab-2d7cd011db47/5ea9ae04-3601-468a-ba84-cb7e82ae1e48"
-    ],
     "html.format.enable": false,
     "go.autocompleteUnimportedPackages": true
 }
