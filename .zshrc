@@ -113,13 +113,12 @@ alias rm-gocache="sudo rm -rf $GOPATH/pkg/mod"
 # nuke docker thingies
 alias docker-prune="docker image prune && docker system prune"
 
-export PATH=$PATH:$PATH/bin:$HOME/bin$HOME/kubernetes/cluster:$HOME/gsutil:$GOROOT/bin
+export PATH=$PATH:$PATH/bin:$HOME/bin$HOME/kubernetes/cluster:$HOME/gsutil:$GOROOT/bin:$HOME/Library/Python/3.7/bin
 
 # go env vars
 export GOPATH=$HOME/gocode
 export GOSRC=$GOPATH/src
 export GO111MODULE=on
-export GOPROXY=https://athens.azurefd.net/
 export PATH=$GOPATH/bin:$PATH
 export PATH=/usr/bin/go/bin:$PATH
 export PATH=/Users/aaschles/.nimble/bin:$PATH
