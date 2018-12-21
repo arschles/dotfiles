@@ -1,0 +1,13 @@
+- MacDown
+- OBS
+- 1Password
+- Docker
+- Dropbox
+- Handbrake
+- Github Desktop
+- Firefox
+- Firefox Dev Edition
+- Slack
+- Spotify
+- VSCode
+- Zoom
