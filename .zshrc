@@ -112,6 +112,8 @@ alias clr="clear && printf '\e[3J'"
 alias rm-gocache="sudo rm -rf $GOPATH/pkg/mod"
 # nuke docker thingies
 alias docker-prune="docker image prune && docker system prune"
+# node in a container
+alias node="docker run -v$PWD:/pwd -w /pwd --rm -p8080:8080 node:11"
 
 export PATH=$PATH:$PATH/bin:$HOME/bin$HOME/kubernetes/cluster:$HOME/gsutil:$GOROOT/bin:$HOME/Library/Python/3.7/bin
 
