@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/bin:/usr/local/bin:/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="${HOME}/.oh-my-zsh"
@@ -115,7 +115,10 @@ alias docker-prune="docker image prune && docker system prune"
 # node in a container
 alias node="docker run -v$PWD:/pwd -w /pwd --rm -p8080:8080 node:11"
 
-export PATH=$PATH:$PATH/bin:$HOME/bin$HOME/kubernetes/cluster:$HOME/gsutil:$GOROOT/bin:$HOME/Library/Python/3.7/bin
+export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/kubernetes/cluster
+export PATH=$PATH:$(go env GOROOT)/bin
+export PATH=$PATH:$HOME/Library/Python/3.7/bin
 
 # go env vars
 export GOPATH=$HOME/gocode
