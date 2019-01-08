@@ -131,6 +131,9 @@ export KUBERNETES_PROVIDER=vagrant
 export KUBERNETES_MASTER_MEMORY=2048
 export KUBERNETES_MINION_MEMORY=6144
 
+# swift env vars for OS X
+export TOOLCHAINS=swift
+
 export EDITOR=nano
 
 eval "$(direnv hook zsh)"
