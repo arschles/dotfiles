@@ -11,3 +11,4 @@
 - Spotify
 - VSCode
 - Zoom
+- Time Out
