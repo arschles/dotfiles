@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/bin:/usr/local/bin:/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="${HOME}/.oh-my-zsh"
@@ -63,7 +63,7 @@ ZSH_THEME="awesomepanda"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
+    git
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -94,14 +94,13 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
+
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias zshconfig="code ~/.zshrc"
+
 alias k="kubectl"
-alias kd="kubectl --namespace=deis"
-alias ks="kubectl --namespace=steward"
 alias ka="kubectl --all-namespaces=true"
-alias kh="kubectl --namespace=helm"
 alias ksys="kubectl --namespace=kube-system"
 alias vbm="vboxmanage"
 alias hug="hub"
@@ -115,19 +114,13 @@ alias docker-prune="docker image prune && docker system prune"
 # node in a container
 alias node="docker run -v$PWD:/pwd -w /pwd --rm -p8080:8080 node:11"
 
-export PATH=$PATH:$HOME/bin
-export PATH=$PATH:$HOME/kubernetes/cluster
 export PATH=$PATH:$(go env GOROOT)/bin
-export PATH=$PATH:$HOME/Library/Python/3.7/bin
 
 # go env vars
 export GOPATH=$HOME/gocode
 export GOSRC=$GOPATH/src
 export GO111MODULE=on
 export PATH=$GOPATH/bin:$PATH
-export PATH=/usr/bin/go/bin:$PATH
-export PATH=/Users/aaschles/.nimble/bin:$PATH
-export DOCKER_BUILDKIT=1
 
 # k8s env vars
 export KUBERNETES_PROVIDER=vagrant
