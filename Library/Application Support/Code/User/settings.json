@@ -1,5 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
+
     "editor.fontSize": 13,
     "editor.wordWrap": "off",
     "editor.insertSpaces": true,
@@ -43,7 +44,7 @@
     },
     "window.openFoldersInNewWindow": "on",
     "workbench.iconTheme": "material-icon-theme",
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 4,
     "html.format.enable": false,
     "go.autocompleteUnimportedPackages": true,
     "sync.gist": "93ac2b8eb2b74870c748d4e022eeeedb",
