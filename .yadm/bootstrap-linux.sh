@@ -10,6 +10,8 @@ chsh -s /bin/zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 
+curl https://sh.rustup.rs -sSf | sh
+
 sudo apt install gnome-tweaks gnome-shell-extensions dconf-editor gnome-weather kupfer
 sudo snap install communitheme
 sudo snap install vlc

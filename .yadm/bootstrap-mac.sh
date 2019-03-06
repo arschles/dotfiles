@@ -9,6 +9,8 @@ brew tap "homebrew/bundle"
 brew tap "azure/draft"
 brew bundle --file=~/.yadm/Brewfile
 
+curl https://sh.rustup.rs -sSf | sh
+
 # change to zsh and use oh-my-zsh
 chsh -s /bin/zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
