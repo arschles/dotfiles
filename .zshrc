@@ -131,6 +131,6 @@ export KUBERNETES_MINION_MEMORY=6144
 export TOOLCHAINS=swift
 
 export EDITOR=nano
-
+source $HOME/.cargo/env
 eval "$(direnv hook zsh)"
 export PATH="/usr/local/opt/llvm/bin:$PATH"

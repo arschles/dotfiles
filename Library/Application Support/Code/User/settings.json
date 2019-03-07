@@ -44,7 +44,7 @@
     },
     "window.openFoldersInNewWindow": "on",
     "workbench.iconTheme": "material-icon-theme",
-    "window.zoomLevel": 4,
+    "window.zoomLevel": 3,
     "html.format.enable": false,
     "go.autocompleteUnimportedPackages": true,
     "sync.gist": "93ac2b8eb2b74870c748d4e022eeeedb",
