@@ -133,3 +133,4 @@ export TOOLCHAINS=swift
 export EDITOR=nano
 
 eval "$(direnv hook zsh)"
+export PATH="/usr/local/opt/llvm/bin:$PATH"
