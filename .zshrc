@@ -131,5 +131,11 @@ export KUBERNETES_MINION_MEMORY=6144
 export TOOLCHAINS=swift
 
 export EDITOR=nano
-
+source $HOME/.cargo/env
 eval "$(direnv hook zsh)"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/arschles/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/arschles/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/arschles/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/arschles/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
