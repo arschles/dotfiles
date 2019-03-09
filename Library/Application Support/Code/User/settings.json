@@ -1,6 +1,5 @@
 // Place your settings in this file to overwrite the default settings
 {
-
     "editor.fontSize": 13,
     "editor.wordWrap": "off",
     "editor.insertSpaces": true,
@@ -31,6 +30,7 @@
         "delay": 500
     },
     "go.useCodeSnippetsOnFunctionSuggest": true,
+    "rust-client.channel": "stable",
     "editor.scrollBeyondLastLine": false,
     "editor.selectionHighlight": false,
     // "editor.renderWhitespace": "boundary",
