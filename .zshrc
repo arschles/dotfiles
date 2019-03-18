@@ -113,6 +113,8 @@ alias rm-gocache="sudo rm -rf $GOPATH/pkg/mod"
 alias docker-prune="docker image prune && docker system prune"
 # node in a container
 alias node="docker run -v$PWD:/pwd -w /pwd --rm -p8080:8080 node:11"
+# cd into the ~/src directory
+alias src="cd ~/src"
 
 export PATH=$PATH:$(go env GOROOT)/bin
 
