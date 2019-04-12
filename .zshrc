@@ -123,6 +123,7 @@ export GOPATH=$HOME/gocode
 export GOSRC=$GOPATH/src
 export GO111MODULE=on
 export PATH=$GOPATH/bin:$PATH
+export GOPROXY=https://athens.azured.net
 
 # k8s env vars
 export KUBERNETES_PROVIDER=vagrant
