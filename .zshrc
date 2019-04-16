@@ -114,6 +114,9 @@ alias docker-prune="docker image prune && docker system prune"
 # node in a container
 alias node="docker run -v$PWD:/pwd -w /pwd --rm -p8080:8080 node:11"
 
+alias gp="git push"
+alias gc="git commit"
+
 export PATH=$PATH:$(go env GOROOT)/bin
 
 # go env vars
@@ -134,3 +137,5 @@ export EDITOR=nano
 source $HOME/.cargo/env
 eval "$(direnv hook zsh)"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
