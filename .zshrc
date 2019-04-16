@@ -113,6 +113,8 @@ alias rm-gocache="sudo rm -rf $GOPATH/pkg/mod"
 alias docker-prune="docker image prune && docker system prune"
 # node in a container
 alias node="docker run -v$PWD:/pwd -w /pwd --rm -p8080:8080 node:11"
+# cd into the ~/src directory
+alias src="cd ~/src"
 
 alias gp="git push"
 alias gc="git commit"
@@ -124,6 +126,7 @@ export GOPATH=$HOME/gocode
 export GOSRC=$GOPATH/src
 export GO111MODULE=on
 export PATH=$GOPATH/bin:$PATH
+export GOPROXY=https://athens.azurefd.net
 
 # k8s env vars
 export KUBERNETES_PROVIDER=vagrant
@@ -139,3 +142,6 @@ eval "$(direnv hook zsh)"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# https://stackoverflow.com/questions/29963617/how-to-call-vs-code-editor-from-command-line/33831403#33831403
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
