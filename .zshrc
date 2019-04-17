@@ -119,6 +119,12 @@ alias src="cd ~/src"
 alias gp="git push"
 alias gc="git commit"
 alias gs="git status"
+alias gd="git diff"
+
+alias yp="yadm push"
+alias yc="yadm commit"
+alias ys="yadm status"
+alias yd="yadm diff"
 
 export PATH=$PATH:$(go env GOROOT)/bin
 
