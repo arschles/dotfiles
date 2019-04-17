@@ -149,6 +149,11 @@ eval "$(direnv hook zsh)"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    VSCODE_BIN="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+    export PATH="$PATH:$VSCODE_BIN"
+fi
+
 
 # https://stackoverflow.com/questions/29963617/how-to-call-vs-code-editor-from-command-line/33831403#33831403
-code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+# code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
