@@ -53,5 +53,8 @@
         "72f988bf-86f1-41af-91ab-2d7cd011db47/cd400f31-6f94-40ab-863a-673192a3c0d0"
     ],
     "team.showWelcomeMessage": false,
-    "markdown.extension.orderedList.marker": "one"
+    "markdown.extension.orderedList.marker": "one",
+    "workbench.tree.indent": 6,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false
 }
