@@ -124,6 +124,8 @@ alias yc="yadm commit"
 alias ys="yadm status"
 alias yd="yadm diff"
 
+alias nodei="docker run -it --rm -v ${PWD}:/pwd -w /pwd node:11 bash"
+
 export PATH=$PATH:$(go env GOROOT)/bin
 
 # go env vars
