@@ -114,7 +114,8 @@ alias docker-prune="docker image prune && docker system prune"
 # cd into the ~/src directory
 alias src="cd ~/src"
 
-alias gp="git push"
+alias gpu="git push"
+alias gol="git pull"
 alias gc="git commit"
 alias gs="git status"
 alias gd="git diff"
