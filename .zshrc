@@ -118,6 +118,7 @@ alias gp="git push"
 alias gc="git commit"
 alias gs="git status"
 alias gd="git diff"
+alias hpr="hub pull-request"
 
 alias yp="yadm push"
 alias yc="yadm commit"
@@ -157,3 +158,6 @@ fi
 
 # https://stackoverflow.com/questions/29963617/how-to-call-vs-code-editor-from-command-line/33831403#33831403
 # code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
