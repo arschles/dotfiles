@@ -120,6 +120,7 @@ alias gc="git commit"
 alias gco="git checkout"
 alias gs="git status"
 alias gd="git diff"
+alias gf="git fetch --all"
 alias hpr="hub pull-request"
 
 alias yp="yadm push"
