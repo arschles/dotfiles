@@ -164,3 +164,4 @@ fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi
