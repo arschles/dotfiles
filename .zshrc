@@ -114,21 +114,22 @@ alias docker-prune="docker image prune && docker system prune"
 # cd into the ~/src directory
 alias src="cd ~/src"
 
+# git[hub] aliases
 alias gpush="git push"
 alias gpull="git pull"
-alias gc="git commit"
-alias gco="git checkout"
+alias gcomm="git commit"
+alias gcheck="git checkout"
+alias gstat="git status"
 alias gs="git status"
 alias gdiff="git diff"
-alias gfetch="git fetch --all"
-alias hpr="hub pull-request"
+alias gfetch="git fetch"
+alias gf="git fetch"
+alias hpullreq="hub pull-request"
 
 alias yp="yadm push"
 alias yc="yadm commit"
 alias ys="yadm status"
 alias yd="yadm diff"
-
-alias nodei="docker run -it --rm -v ${PWD}:/pwd -w /pwd node:11 bash"
 
 export PATH=$PATH:$(go env GOROOT)/bin
 
