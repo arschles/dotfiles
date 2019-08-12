@@ -125,6 +125,7 @@ alias gdiff="git diff"
 alias gfetch="git fetch"
 alias gf="git fetch"
 alias hpullreq="hub pull-request"
+alias hpr="hub pull-request"
 
 alias yp="yadm push"
 alias yc="yadm commit"
