@@ -163,3 +163,4 @@ fi
 
 # https://stackoverflow.com/questions/29963617/how-to-call-vs-code-editor-from-command-line/33831403#33831403
 # code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+export PATH="/usr/local/sbin:$PATH"
