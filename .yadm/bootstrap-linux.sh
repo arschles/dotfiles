@@ -4,6 +4,7 @@ sudo apt-get update
 sudo apt-add-repository ppa:obsproject/obs-studio
 sudo apt-get update
 sudo apt-get install ffmpeg obs-studio git mercurial zsh direnv xclip gnome-tweaks-tools net-tools
+sudo apt install byobu
 cp ./aliases-linux.sh ~/.aliases
 source ~/.aliases
 chsh -s /bin/zsh
