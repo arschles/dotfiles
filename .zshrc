@@ -118,6 +118,7 @@ alias lsal="ls -al"
 
 # git[hub] aliases
 alias gpush="git push"
+alias gadd="git add"
 alias gpull="git pull"
 alias gcomm="git commit"
 alias gcheck="git checkout"
