@@ -4,7 +4,7 @@ sudo apt-get update
 sudo apt-add-repository ppa:obsproject/obs-studio
 sudo apt-get update
 sudo apt-get install ffmpeg obs-studio git mercurial zsh direnv xclip gnome-tweaks-tools net-tools
-sudo apt install byobu
+sudo apt install byobu golang direnv
 cp ./aliases-linux.sh ~/.aliases
 source ~/.aliases
 chsh -s /bin/zsh
@@ -22,6 +22,3 @@ sudo snap install vscode --classic
 
 # set up the dock
 gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'firefox_dev.desktop', 'slack_slack.desktop', 'code.desktop', 'org.gnome.Terminal.desktop', 'gnome-control-center.desktop', 'software-properties-gtk.desktop', 'org.gnome.Software.desktop']"
-
-# install vscode settings
-cat ./vscode.json > $HOME/.config/Code/User/settings.json
