@@ -149,7 +149,6 @@ module.exports = {
   plugins: [
     'hypercwd',
     'hyper-search',
-    'hyperline'
   ],
 
   // in development, you can create a directory under
