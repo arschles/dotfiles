@@ -163,6 +163,9 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 if [[ "$OSTYPE" == "darwin"* ]]; then
     VSCODE_BIN="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
     export PATH="$PATH:$VSCODE_BIN"
+    export CPATH="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/"
+    export CGO_ENABLED=1;
+    export CC=gcc;
 fi
 
 
