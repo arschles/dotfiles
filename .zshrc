@@ -64,6 +64,8 @@ ZSH_THEME="afowler"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
+    pyenv
+    python
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -161,6 +163,9 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 if [[ "$OSTYPE" == "darwin"* ]]; then
     VSCODE_BIN="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
     export PATH="$PATH:$VSCODE_BIN"
+    export CPATH="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/"
+    export CGO_ENABLED=1;
+    export CC=gcc;
 fi
 
 
@@ -168,3 +173,9 @@ fi
 # code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 export PATH="/usr/local/sbin:/usr/local/kubebuilder/bin:$PATH"
 export PATH="/usr/local/opt/llvm@8/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/arschles/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/arschles/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/arschles/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/arschles/google-cloud-sdk/completion.zsh.inc'; fi
