@@ -1,5 +1,12 @@
 #!/bin/bash
 
+WHO=$(whoami)
+if [ "${WHO}" = "root" ]
+then
+    echo "You're root! Don't be root. Create a new user (useradd -m USERNAME) and then run this again"
+    exit
+fi
+
 echo "Howdy! Welcome to the Linux bootstrap script"
 sudo apt-get update
 sudo apt-get update
@@ -20,6 +27,9 @@ chsh -s $(which zsh)
 
 echo "Installing rust"
 curl https://sh.rustup.rs -sSf | sh
+
+echo "Installing LinuxBrew"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 echo "Go add this SSH public key to Github:"
 cat ~/.ssh/id_rsa.pub
