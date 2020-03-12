@@ -2,7 +2,6 @@
 
 echo "Howdy! Welcome to the Linux bootstrap script"
 sudo apt-get update
-sudo apt-add-repository ppa:obsproject/obs-studio
 sudo apt-get update
 sudo apt-get install ffmpeg git mercurial zsh direnv xclip gnome-tweaks-tools net-tools
 sudo apt install byobu golang direnv
