@@ -9,11 +9,19 @@ touch ./aliases-linux.sh
 cp ./aliases-linux.sh ~/.aliases
 source ~/.aliases
 
+echo "Creating SSH keys"
+ssh-keygen -t rsa -b 4096 -C "aaron@ecomaz.net"
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
+
+
 echo "Changing shells to zsh"
 chsh -s $(which zsh)
 
-echo "Installing oh-my-zsh"
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
 echo "Installing rust"
 curl https://sh.rustup.rs -sSf | sh
+
+echo "Go add this SSH public key to Github:"
+cat ~/.ssh/id_rsa.pub
+echo "And then install oh-my-zsh"
+echo 'sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
