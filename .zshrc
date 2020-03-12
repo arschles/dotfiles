@@ -181,3 +181,5 @@ if [ -f '/Users/arschles/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/arschl
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/arschles/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/arschles/google-cloud-sdk/completion.zsh.inc'; fi
+
+cd ~
