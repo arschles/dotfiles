@@ -31,6 +31,11 @@ curl https://sh.rustup.rs -sSf | sh
 echo "Installing LinuxBrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
+echo "Installing the GitHub CLI"
+curl -o gh.deb -L https://github.com/cli/cli/releases/download/v0.6.1/gh_0.6.1_linux_amd64.deb
+sudo apt install git && sudo dpkg -i gh.deb
+rm gh.deb
+
 echo "Go add this SSH public key to Github:"
 cat ~/.ssh/id_rsa.pub
 echo "And then install oh-my-zsh"
