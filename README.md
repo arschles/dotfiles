@@ -6,4 +6,4 @@ This repository contains dotfiles and stuff for my machine. Use [yadm](https://t
 yadm clone https://github.com/arschles/dotfiles.git
 ```
 
-It has a bootstrap script that switches on `$OSTYPE` to execute setup for Ubuntu or OS X.
+It has a bootstrap script that switches on `uname` to execute setup for Debian/Ubuntu or OS X.
