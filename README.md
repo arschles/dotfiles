@@ -9,8 +9,7 @@ Before we get started, let's create SSH keys, add them to GitHub, and install [o
 First, use some command line magic to create your SSH keys. You'll need these for a few things later, including to install the wonderful oh-my-zsh:
 
 ```console
-$ sudo apt update
-$ sudo apt install ssh-agent ssh-keygen
+$ sudo apt update && sudo apt install ssh
 $ ssh-keygen -t rsa -b 4096 -C "aaron@ecomaz.net"
 $ eval $(ssh-agent -s)
 $ ssh-add ~/.ssh/id_rsa
