@@ -26,6 +26,9 @@ chsh -s $(which zsh)
 echo "Installing rust"
 curl https://sh.rustup.rs -sSf | sh
 
+echo "Installing Linuxbrew"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
 echo "Installing the GitHub CLI"
 curl -o ./gh.deb -L https://github.com/cli/cli/releases/download/v0.6.1/gh_0.6.1_linux_amd64.deb
 sudo apt install git && sudo dpkg -i ./gh.deb
