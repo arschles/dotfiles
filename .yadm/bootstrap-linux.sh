@@ -25,8 +25,8 @@ rm ./gh.deb
 echo "Installing oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # the oh-my-zsh installer script overwrites things like the zshrc, so copy the original back later
-cp ./zshrc ~/.zshrc
+cp ~/.yadm/zshrc ~/.zshrc
 touch ./aliases-linux.sh
-cp ./aliases-linux.sh ~/.aliases
+cp ~/.yadm/aliases-linux.sh ~/.aliases
 source ~/.aliases
 
