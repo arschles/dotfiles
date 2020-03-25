@@ -30,4 +30,6 @@ touch ./aliases-linux.sh
 cp ~/.yadm/aliases-linux ~/.aliases
 source ~/.aliases
 source ~/.zshrc
+touch ~/.zprofile
+cp ~/.yadm/zprofile ~/.zprofile
 
