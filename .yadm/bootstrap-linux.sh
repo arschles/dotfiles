@@ -10,9 +10,6 @@ fi
 echo "Howdy! Welcome to the Linux bootstrap script"
 sudo apt update
 sudo apt install ffmpeg git mercurial zsh direnv xclip gnome-tweaks-tools net-tools curl golang byobu direnv zsh curl
-touch ./aliases-linux.sh
-cp ./aliases-linux.sh ~/.aliases
-source ~/.aliases
 
 echo "Installing rust"
 curl https://sh.rustup.rs -sSf | sh
@@ -26,4 +23,10 @@ sudo apt install git && sudo dpkg -i ./gh.deb
 rm ./gh.deb
 
 echo "Installing oh-my-zsh"
-echo 'sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# the oh-my-zsh installer script overwrites things like the zshrc, so copy the original back later
+cp ./zshrc ~/.zshrc
+touch ./aliases-linux.sh
+cp ./aliases-linux.sh ~/.aliases
+source ~/.aliases
+
