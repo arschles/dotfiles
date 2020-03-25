@@ -9,7 +9,7 @@ fi
 
 echo "Howdy! Welcome to the Linux bootstrap script"
 sudo apt update
-sudo apt install ffmpeg git mercurial zsh direnv xclip gnome-tweaks-tools net-tools curl golang byobu direnv zsh
+sudo apt install ffmpeg git mercurial zsh direnv xclip gnome-tweaks-tools net-tools curl golang byobu direnv zsh curl
 touch ./aliases-linux.sh
 cp ./aliases-linux.sh ~/.aliases
 source ~/.aliases
