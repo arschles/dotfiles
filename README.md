@@ -1,8 +1,16 @@
 # dotfiles
 
-This repository contains dotfiles and stuff for my machine. Use [yadm](https://thelocehiliosan.github.io/yadm/) to install this stuff:
+This repository contains dotfiles and stuff for my machine. Use [yadm](https://thelocehiliosan.github.io/yadm/) to install this stuff.
 
+First, install Yadm:
+
+```console
+$ sudo apt install yadm
 ```
+
+Then, install the dotfiles:
+
+```console
 yadm clone https://github.com/arschles/dotfiles.git
 ```
 
