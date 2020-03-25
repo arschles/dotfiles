@@ -27,7 +27,7 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 # the oh-my-zsh installer script overwrites things like the zshrc, so copy the original back later
 cp ~/.yadm/zshrc ~/.zshrc
 touch ./aliases-linux.sh
-cp ~/.yadm/aliases-linux.sh ~/.aliases
+cp ~/.yadm/aliases-linux ~/.aliases
 source ~/.aliases
 source ~/.zshrc
 
