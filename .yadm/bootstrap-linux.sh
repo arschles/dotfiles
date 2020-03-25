@@ -8,10 +8,8 @@ then
 fi
 
 echo "Howdy! Welcome to the Linux bootstrap script"
-sudo apt-get update
-sudo apt-get update
-sudo apt-get install ffmpeg git mercurial zsh direnv xclip gnome-tweaks-tools net-tools
-sudo apt install byobu golang direnv zsh
+sudo apt update
+sudo apt install ffmpeg git mercurial zsh direnv xclip gnome-tweaks-tools net-tools curl golang byobu direnv zsh
 touch ./aliases-linux.sh
 cp ./aliases-linux.sh ~/.aliases
 source ~/.aliases
@@ -29,9 +27,9 @@ echo "Installing rust"
 curl https://sh.rustup.rs -sSf | sh
 
 echo "Installing the GitHub CLI"
-curl -o gh.deb -L https://github.com/cli/cli/releases/download/v0.6.1/gh_0.6.1_linux_amd64.deb
-sudo apt install git && sudo dpkg -i gh.deb
-rm gh.deb
+curl -o ./gh.deb -L https://github.com/cli/cli/releases/download/v0.6.1/gh_0.6.1_linux_amd64.deb
+sudo apt install git && sudo dpkg -i ./gh.deb
+rm ./gh.deb
 
 echo "Go add this SSH public key to Github:"
 cat ~/.ssh/id_rsa.pub
