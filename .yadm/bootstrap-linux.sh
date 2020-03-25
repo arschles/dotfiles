@@ -29,4 +29,5 @@ cp ~/.yadm/zshrc ~/.zshrc
 touch ./aliases-linux.sh
 cp ~/.yadm/aliases-linux.sh ~/.aliases
 source ~/.aliases
+source ~/.zshrc
 
