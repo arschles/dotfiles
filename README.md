@@ -9,7 +9,8 @@ Before we get started, let's create SSH keys, add them to GitHub, and install [o
 First, use some command line magic to create your SSH keys. You'll need these for a few things later, including to install the wonderful oh-my-zsh:
 
 ```console
-$ sudo apt update && sudo apt install ssh
+$ sudo apt update
+$ sudo apt install ssh
 $ ssh-keygen -t rsa -b 4096 -C "aaron@ecomaz.net"
 $ eval $(ssh-agent -s)
 $ ssh-add ~/.ssh/id_rsa
@@ -32,7 +33,6 @@ Then, go to [github.com/settings/ssh/new](https://github.com/settings/ssh/new), 
 Now that you've got all your keys set up, let's get our `apt` package manager ready, and install [yadm](https://thelocehiliosan.github.io/yadm/):
 
 ```console
-$ sudo apt update
 $ sudo apt install yadm
 ```
 
