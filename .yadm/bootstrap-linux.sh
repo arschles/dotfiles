@@ -9,7 +9,7 @@ fi
 
 echo "Howdy! Welcome to the Linux bootstrap script"
 sudo apt update
-sudo apt install -Y ffmpeg git mercurial zsh direnv xclip net-tools curl golang byobu direnv zsh curl wget
+sudo apt install -Y ffmpeg git mercurial zsh direnv xclip net-tools curl golang byobu direnv zsh curl wget autoload direnv
 
 echo "Installing rust"
 curl https://sh.rustup.rs -sSf | sh
