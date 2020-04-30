@@ -9,7 +9,7 @@ fi
 
 echo "Howdy! Welcome to the Linux bootstrap script"
 sudo apt update
-sudo apt install -Y ffmpeg git mercurial zsh direnv xclip net-tools curl golang byobu direnv zsh curl wget autoload direnv
+sudo apt install -y ffmpeg git mercurial zsh direnv xclip net-tools curl golang byobu direnv zsh curl wget autoload direnv
 
 echo "Installing rust"
 curl https://sh.rustup.rs -sSf | sh
@@ -22,7 +22,7 @@ brew install hugo
 
 echo "Installing the GitHub CLI"
 curl -o ./gh.deb -L https://github.com/cli/cli/releases/download/v0.6.1/gh_0.6.1_linux_amd64.deb
-sudo apt install -Y git && sudo dpkg -i ./gh.deb
+sudo apt install -y git && sudo dpkg -i ./gh.deb
 rm ./gh.deb
 
 echo "Installing oh-my-zsh"
