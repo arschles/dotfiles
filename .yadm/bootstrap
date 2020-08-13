@@ -3,8 +3,10 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
 OSTYPE=$(uname -s)
-if [[ "$OSTYPE" == "Linux" ]]; then
+if [[ "$OSTYPE" == "Linux" ]] || [[ "$OSTYPE" ==  "linux-gnu" ]]
+then
     ${DIR}/bootstrap-linux.sh
-elif [[ "$OSTYPE" == "Darwin" ]]; then
+elif [[ "$OSTYPE" == "Darwin" ]]
+then
     ${DIR}/bootstrap-mac.sh
 fi
