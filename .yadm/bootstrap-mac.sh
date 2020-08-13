@@ -14,3 +14,6 @@ curl https://sh.rustup.rs -sSf | sh
 # change to zsh and use oh-my-zsh
 chsh -s /bin/zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+echo "Installing Azure CLI"
+brew update && brew install azure-cli
