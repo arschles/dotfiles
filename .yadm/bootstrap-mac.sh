@@ -17,3 +17,6 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 
 echo "Installing Azure CLI"
 brew update && brew install azure-cli
+
+echo "Installing k9s Kubernetes CLI tool"
+brew install k9s
