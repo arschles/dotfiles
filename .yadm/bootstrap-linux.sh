@@ -49,3 +49,7 @@ echo "Installing caddy"
 curl -o caddy -L https://github.com/caddyserver/caddy/releases/download/v2.0.0-beta.20/caddy2_beta20_linux_amd64
 sudo chmod +x caddy
 sudo mv caddy /usr/local/bin/caddy
+
+echo "Installing Azure CLI"
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+
