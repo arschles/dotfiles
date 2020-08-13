@@ -8,12 +8,12 @@ Before we get started, let's create SSH keys, add them to GitHub, and install [o
 
 First, use some command line magic to create your SSH keys. You'll need these for a few things later, including to install the wonderful oh-my-zsh:
 
-```console
-$ sudo apt update
-$ sudo apt install ssh
-$ ssh-keygen -t rsa -b 4096 -C "aaron@ecomaz.net"
-$ eval $(ssh-agent -s)
-$ ssh-add ~/.ssh/id_rsa
+```shell
+sudo apt update
+sudo apt install ssh
+ssh-keygen -t rsa -b 4096 -C "aaron@ecomaz.net"
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
 ```
 
 ## Add your keys to GitHub
@@ -22,8 +22,8 @@ Next, add your keys to GitHub so you can access various GitHub repositories, inc
 
 First, get your public key. Copy this value to the clipboard (using `ctrl+shift+c if you're on WSL`).
 
-```console
-$ cat ~/.ssh/id_rsa.pub
+```shell
+cat ~/.ssh/id_rsa.pub
 ```
 
 Then, go to [github.com/settings/ssh/new](https://github.com/settings/ssh/new), name the key (for example: "My new machine!") in the Title box, and paste the public key value into the "Key" box
@@ -32,15 +32,15 @@ Then, go to [github.com/settings/ssh/new](https://github.com/settings/ssh/new), 
 
 Now that you've got all your keys set up, let's get our `apt` package manager ready, and install [yadm](https://thelocehiliosan.github.io/yadm/):
 
-```console
-$ sudo apt install yadm
+```shell
+sudo apt install yadm
 ```
 
 ## Install dotfiles
 
 Now that yadm is installed, we can go install these dotfiles. They should do everything else for us!
 
-```console
+```shell
 yadm clone https://github.com/arschles/dotfiles.git
 ```
 
