@@ -56,3 +56,7 @@ curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 echo "Installing k9s Kubernetes CLI tool"
 brew install k9s
 
+echo "Installing Starship"
+brew install starship
+
+
