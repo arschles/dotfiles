@@ -20,3 +20,8 @@ brew update && brew install azure-cli
 
 echo "Installing k9s Kubernetes CLI tool"
 brew install k9s
+
+echo "Installing Starship"
+brew install starship
+
+
