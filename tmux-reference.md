@@ -2,6 +2,8 @@
 
 Taken from [Howtogeek](https://www.howtogeek.com/671422/how-to-use-tmux-on-linux-and-why-its-better-than-screen/)
 
+**Fuller cheat sheet [here](http://tmuxcheatsheet.com/)**
+
 ## Session Commands
 
 - S: List sessions.
