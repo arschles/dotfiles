@@ -183,8 +183,6 @@ if [ -f '/Users/arschles/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/arschl
 if [ -f '/Users/arschles/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/arschles/google-cloud-sdk/completion.zsh.inc'; fi
 
 # you can install starship from https://starship.rs/
-if [[ command -v "starship" >/dev/null 2>&1 ]]; then
-    eval "$(starship init zsh)"
-fi;
+eval "$(starship init zsh)"
 
 source ~/.zprofile
