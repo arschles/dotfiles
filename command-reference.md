@@ -1,3 +1,8 @@
+# The `history` command
+
+- `history | grep <command>` - the commands you ran that match `<command>`
+- `!123` - re-run command `123` in the history
+
 # A Ctrl+B Cheat Sheet for Tmux
 
 Taken from [Howtogeek](https://www.howtogeek.com/671422/how-to-use-tmux-on-linux-and-why-its-better-than-screen/)
