@@ -1,0 +1,32 @@
+
+prompt_order=[
+    "git_branch",
+    "git_status",
+    "golang",
+    "rust",
+    "kubernetes",
+    "package",
+    "line_break",
+    "character"
+]
+
+[git_branch]
+symbol = "🌲 "
+truncation_length = 4
+truncation_symbol = ""
+
+[git_status]
+prefix = "<"
+suffix = "> "
+
+[golang]
+prefix = "(go)"
+
+[rust]
+prefix = "(rust)"
+
+[kubernetes]
+prefix = "(k8s)"
+disabled = true
+[kubernetes.context_aliases]
+"dev.local.cluster.k8s" = "dev"
