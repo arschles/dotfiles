@@ -1,5 +1,6 @@
 
 prompt_order=[
+    "directory",
     "git_branch",
     "git_status",
     "golang",
@@ -9,6 +10,9 @@ prompt_order=[
     "line_break",
     "character"
 ]
+
+[directory]
+truncation_length = 8
 
 [git_branch]
 symbol = "🌲 "
