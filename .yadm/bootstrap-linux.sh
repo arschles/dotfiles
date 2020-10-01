@@ -7,6 +7,8 @@ then
     exit
 fi
 
+chsh -s /bin/zsh
+
 echo "Howdy! Welcome to the Linux bootstrap script"
 sudo apt update
 sudo apt install -y ffmpeg git mercurial zsh direnv xclip net-tools curl golang byobu direnv zsh curl wget direnv
@@ -39,8 +41,8 @@ sudo apt install snapd
 
 echo "Installing ao - MS Todos"
 sudo snap install ao
-echo "Installing oh-my-zsh"
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# echo "Installing oh-my-zsh"
+# sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # the oh-my-zsh installer script overwrites things like the zshrc, so copy the original back later
 cp ~/.yadm/zshrc ~/.zshrc
 touch ./aliases-linux.sh
