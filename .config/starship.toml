@@ -1,15 +1,15 @@
 
-prompt_order=[
-    "directory",
-    "git_branch",
-    "git_status",
-    "golang",
-    "rust",
-    "kubernetes",
-    "package",
-    "line_break",
-    "character"
-]
+format="""\
+    $directory\
+    $git_branch\
+    $git_status\
+    $golang\
+    $rust\
+    $kubernetes\
+    $package\
+    $line_break\
+    $character
+    """
 
 [directory]
 truncation_length = 8
@@ -18,10 +18,6 @@ truncation_length = 8
 symbol = "🌲 "
 truncation_length = 4
 truncation_symbol = ""
-
-[git_status]
-prefix = "<"
-suffix = "> "
 
 [golang]
 prefix = "(go)"
