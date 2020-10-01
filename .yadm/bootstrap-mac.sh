@@ -24,4 +24,7 @@ brew install k9s
 echo "Installing Starship"
 brew install starship
 
+echo "Installing thefuck"
+brew install thefuck
+
 
