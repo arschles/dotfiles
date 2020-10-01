@@ -34,6 +34,11 @@ curl -o ./gh.deb -L https://github.com/cli/cli/releases/download/v0.6.1/gh_0.6.1
 sudo apt install -y git && sudo dpkg -i ./gh.deb
 rm ./gh.deb
 
+echo "Installing snap"
+sudo apt install snapd
+
+echo "Installing ao - MS Todos"
+sudo snap install ao
 echo "Installing oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # the oh-my-zsh installer script overwrites things like the zshrc, so copy the original back later
@@ -59,4 +64,5 @@ brew install k9s
 echo "Installing Starship"
 brew install starship
 
-
+echo "Installing thefuck"
+brew install thefuck
