@@ -1,14 +1,10 @@
 
 format="""\
     $directory\
-    $git_branch\
-    $git_status\
     $golang\
     $rust\
     $kubernetes\
     $package\
-    $line_break\
-    $character
     """
 
 [directory]
@@ -30,3 +26,4 @@ prefix = "(k8s)"
 disabled = true
 [kubernetes.context_aliases]
 "dev.local.cluster.k8s" = "dev"
+
