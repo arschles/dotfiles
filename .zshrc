@@ -137,7 +137,6 @@ alias ys="yadm status"
 alias yd="yadm diff"
 
 alias tkeylight="keylight -a http://192.168.1.2:9123"
-alias keylight-off=""
 
 export PATH=$PATH:$(go env GOROOT)/bin
 
