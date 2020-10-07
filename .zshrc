@@ -136,6 +136,9 @@ alias yc="yadm commit"
 alias ys="yadm status"
 alias yd="yadm diff"
 
+alias tkeylight="keylight -a http://192.168.1.2:9123"
+alias keylight-off=""
+
 export PATH=$PATH:$(go env GOROOT)/bin
 
 # go env vars
@@ -155,7 +158,7 @@ export TOOLCHAINS=swift
 
 export EDITOR=nano
 source $HOME/.cargo/env
-# eval "$(direnv hook zsh)"
+eval "$(direnv hook zsh)"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

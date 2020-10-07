@@ -52,6 +52,12 @@ source ~/.zshrc
 touch ~/.zprofile
 cp ~/.yadm/zprofile ~/.zprofile
 
+echo "Installing Go"
+brew install go
+
+echo "Installing Keylight CLI"
+go get github.com/mdlayher/keylight/cmd/keylight
+
 echo "Installing caddy"
 curl -o caddy -L https://github.com/caddyserver/caddy/releases/download/v2.0.0-beta.20/caddy2_beta20_linux_amd64
 sudo chmod +x caddy
