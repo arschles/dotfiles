@@ -5,6 +5,7 @@ format="""\
     $rust\
     $kubernetes\
     $package\
+    $python\
     """
 
 [directory]
