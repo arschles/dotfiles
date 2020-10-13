@@ -17,7 +17,7 @@ truncation_length = 4
 truncation_symbol = ""
 
 [golang]
-prefix = "(go)"
+format = "Go [$symbol $version]($style) "
 
 [rust]
 prefix = "(rust)"
