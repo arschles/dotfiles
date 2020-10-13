@@ -14,7 +14,10 @@ sudo apt update
 sudo apt install -y ffmpeg git mercurial zsh direnv xclip net-tools curl golang byobu direnv zsh curl wget direnv
 
 echo "Installing rust"
-curl https://sh.rustup.rs -sSf | sh -s -- -y
+curl https://sh.rustup.rs -sSf | sh -s -- -y\
+
+echo "Installing gcc-5 (for CGo)"
+sudo apt install -y gcc-5
 
 echo "Installing Linuxbrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
