@@ -78,13 +78,13 @@ brew install starship
 echo "Installing thefuck"
 brew install thefuck
 
-echo "Installing nvidia drivers for ubuntu"
+echo "Installing nvidia drivers for ubuntu (disabled)"
 echo "See: http://www.linuxandubuntu.com/home/how-to-install-latest-nvidia-drivers-in-linux"
-sudo apt-get purge nvidia*
-sudo add-apt-repository ppa:graphics-drivers
-sudo apt-get update
-sudo apt-get install nvidia-driver-455
-echo "To complete the driver install, reboot the computer after everything else is installed"
-echo "You may want to freeze the driver version so you don't get burned by updates."
-echo "Here's how you do that:"
-echo "sudo apt-mark hold nvidia-driver-455"
+# sudo apt-get purge nvidia*
+# sudo add-apt-repository ppa:graphics-drivers
+# sudo apt-get update
+# sudo apt-get install nvidia-driver-455
+# echo "To complete the driver install, reboot the computer after everything else is installed"
+# echo "You may want to freeze the driver version so you don't get burned by updates."
+# echo "Here's how you do that:"
+# echo "sudo apt-mark hold nvidia-driver-455"
