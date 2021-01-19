@@ -8,6 +8,7 @@
 	email = aaron@ecomaz.net
 [alias]
 	st = status
+	c = commit -s
 [core]
 	editor = code --wait
 	excludesfile = /Users/aaronschlesinger/.gitignore_global
