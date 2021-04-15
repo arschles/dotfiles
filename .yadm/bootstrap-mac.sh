@@ -27,4 +27,9 @@ brew install starship
 echo "Installing thefuck"
 brew install thefuck
 
+echo "Installing Fira Code Fonts"
+brew tap homebrew/cask-fonts
+brew install --cask font-fira-code
+
+
 
