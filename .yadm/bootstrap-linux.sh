@@ -88,3 +88,11 @@ echo "See: http://www.linuxandubuntu.com/home/how-to-install-latest-nvidia-drive
 # echo "You may want to freeze the driver version so you don't get burned by updates."
 # echo "Here's how you do that:"
 # echo "sudo apt-mark hold nvidia-driver-455"
+
+echo "Installing bin tool"
+curl -o ./bin -L https://github.com/marcosnils/bin/releases/download/v0.8.0/bin_0.8.0_Linux_x86_64
+./bin install github.com/marcosnils/bin
+rm ./bin
+
+echo "Installing mage"
+bin install github.com/magefile/mage
