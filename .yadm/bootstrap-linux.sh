@@ -78,6 +78,8 @@ brew install starship
 echo "Installing thefuck"
 brew install thefuck
 
+bash ./install-node.sh
+
 echo "Installing nvidia drivers for ubuntu (disabled)"
 echo "See: http://www.linuxandubuntu.com/home/how-to-install-latest-nvidia-drivers-in-linux"
 # sudo apt-get purge nvidia*
