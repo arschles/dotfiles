@@ -46,6 +46,7 @@
                 delta
                 starship
                 go
+                golangci-lint
             ];
         };
     };
