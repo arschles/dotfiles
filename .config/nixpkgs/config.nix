@@ -45,6 +45,7 @@
                 # docker-ls
                 delta
                 starship
+                go
             ];
         };
     };
