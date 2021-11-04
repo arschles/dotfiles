@@ -53,6 +53,7 @@
                 asciinema
                 procs
                 ripgrep
+                htop
             ];
         };
     };
