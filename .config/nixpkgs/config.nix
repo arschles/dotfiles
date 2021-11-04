@@ -47,6 +47,10 @@
                 starship
                 go
                 golangci-lint
+                caddy
+                k9s
+                thefuck
+                fira-code
             ];
         };
     };
