@@ -17,7 +17,7 @@ alias docker-prune="docker image prune && docker system prune"
 # cd into the ~/src directory
 alias src="cd ~/src"
 # list everything
-alias lsal="ls -al"
+alias ls="exa -al"
 
 # git[hub] aliases
 alias gpush="git push"
