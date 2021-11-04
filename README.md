@@ -51,3 +51,13 @@ And finally, use Yadm to install these dotfiles:
 ```shell
 yadm clone https://github.com/arschles/dotfiles.git
 ```
+
+## Install Everything Else
+
+These steps are a bit long but worth it. You can now keep your machine up to date with all changes to this dotfiles repository, forever.
+
+All of the packages are specified in [config.nix](/.config/nixpkgs/config.nix) and installable with the Nix package manager. The above steps purposely don't install everything in that file because that can take a while. Do the install with the follow command:
+
+```shell
+nix-env -iA nixpkgs.myPackages
+```
