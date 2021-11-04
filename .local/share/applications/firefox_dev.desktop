@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Firefox Developer Edition
-Categories=Network;X-Developer;
-Type=Application
-Icon=/usr/local/firefox_dev/browser/chrome/icons/default/default128.png
-Exec=/usr/local/firefox_dev/firefox %u
-Terminal=false
-Comment=Firefox Developer Edition Web Browser.
