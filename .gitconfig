@@ -10,7 +10,7 @@
 	st = status
 	c = commit -s
 [core]
-	editor = code --wait
+	editor = nano -w
 	excludesfile = /Users/aaronschlesinger/.gitignore_global
 [url "git@github.com:"]
 	insteadOf = https://github.com/
