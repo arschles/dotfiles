@@ -1,12 +1,14 @@
 # dotfiles
 
-This repository contains dotfiles and stuff for my machine. You'll use [yadm](https://thelocehiliosan.github.io/yadm/) to install almost everything.
+This repository contains dotfiles and other configurations that match my preferences for working on the macOS or Linux (primarily Debian variants) platforms. 
 
-Before we get started, let's create SSH keys, add them to GitHub, and install [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh):
+It uses [Nix](https://nixos.org/) and [Yadm](https://thelocehiliosan.github.io/yadm/) to provision and install almost everything.
 
-## Create SSH keys
+## Installing
 
-First, use some command line magic to create your SSH keys. You'll need these for a few things later, including to install the wonderful oh-my-zsh:
+To start, you'll need to create SSH keys and upload them to GitHub so that Yadm can download this repository onto the machine.
+
+First, create the key:
 
 ```shell
 sudo apt update
@@ -16,11 +18,7 @@ eval $(ssh-agent -s)
 ssh-add ~/.ssh/id_rsa
 ```
 
-## Add your keys to GitHub
-
-Next, add your keys to GitHub so you can access various GitHub repositories, including the oh-my-zsh one as well as your private repos later.
-
-First, get your public key. Copy this value to the clipboard (using `ctrl+shift+c if you're on WSL`).
+Next, add it to GitHub. Here's how to print out the key. Do this and then copy it onto your clipboard:
 
 ```shell
 cat ~/.ssh/id_rsa.pub
@@ -28,20 +26,28 @@ cat ~/.ssh/id_rsa.pub
 
 Then, go to [github.com/settings/ssh/new](https://github.com/settings/ssh/new), name the key (for example: "My new machine!") in the Title box, and paste the public key value into the "Key" box
 
-## Install Yadm
+## Install Nix, then Yadm
 
-Now that you've got all your keys set up, let's get our `apt` package manager ready, and install [yadm](https://thelocehiliosan.github.io/yadm/):
+This part is a bit roundabout. You'll do this:
+
+- Install Nix
+- Use Nix to install Yadm
+- Use Yadm to download this repository
+
+First, [install Nix](https://nixos.org/download.html) (this will require root access):
 
 ```shell
-sudo apt install yadm
+curl -L https://nixos.org/nix/install | sh
 ```
 
-## Install dotfiles
+Then, instal Yadm:
 
-Now that yadm is installed, we can go install these dotfiles. They should do everything else for us!
+```shell
+nix-env -iA nixpkgs.yadm
+```
+
+And finally, use Yadm to install these dotfiles:
 
 ```shell
 yadm clone https://github.com/arschles/dotfiles.git
 ```
-
->The dotfiles have a bootstrap script that switches on `uname` to execute setup for Debian/Ubuntu or OS X.
