@@ -44,6 +44,7 @@
                 # docker-gc
                 # docker-ls
                 delta
+                starship
             ];
         };
     };
