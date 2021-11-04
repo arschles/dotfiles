@@ -39,6 +39,7 @@ alias ycomm="yadm commit -s"
 alias ys="yadm status"
 alias ydiff="yadm diff"
 alias yadd="yadm add"
+alias ypull="yadm pull"
 
 alias tkeylight="keylight -a http://192.168.1.2:9123"
 
