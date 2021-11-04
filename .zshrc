@@ -1,7 +1,7 @@
 export PATH=$HOME/bin:/usr/local/go/bin:/usr/local/bin::/home/aaron/.local/bin:$PATH
 
 alias zshconfig="code ~/.zshrc"
-
+alias grep="rg"
 alias k="kubectl"
 alias ka="kubectl --all-namespaces=true"
 alias ksys="kubectl --namespace=kube-system"

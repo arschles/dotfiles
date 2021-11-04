@@ -35,11 +35,9 @@
                 tealdeer
                 mdbook
                 curlie
-                coreutils
                 gdb
                 ffmpeg
                 emscripten
-                silver-searcher
                 docker
                 docker-gc
                 docker-ls
@@ -52,6 +50,9 @@
                 thefuck
                 fira-code
                 exa
+                asciinema
+                procs
+                ripgrep
             ];
         };
     };
