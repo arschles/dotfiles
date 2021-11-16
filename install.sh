@@ -16,6 +16,9 @@ curl -o ./bin -L https://github.com/marcosnils/bin/releases/download/v0.8.0/bin_
 ./bin install github.com/marcosnils/bin
 rm ./bin
 
+echo "Installing Azure CLI"
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+
 cp ~/.yadm/zshrc ~/.zshrc
 touch ./aliases-linux.sh
 cp ~/.yadm/aliases-linux ~/.aliases
