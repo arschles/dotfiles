@@ -3,7 +3,6 @@
         myPackages = pkgs.buildEnv {
             name = "ecomaz-packages";
             paths = [
-                yadm
                 mage
                 du-dust
                 azure-cli
@@ -16,7 +15,6 @@
                 jq
                 python39
                 cargo
-                rustup
                 wget
                 dog
                 curl
