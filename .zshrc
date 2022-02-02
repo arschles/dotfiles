@@ -97,3 +97,5 @@ eval "$(thefuck --alias)"
 # echo -e "\n. $(brew --prefix asdf)/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
 
 export PATH="$HOME/.poetry/bin:$PATH"
+
+if [ -e /home/ecomaz/.nix-profile/etc/profile.d/nix.sh ]; then . /home/ecomaz/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
