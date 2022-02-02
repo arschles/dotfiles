@@ -41,8 +41,6 @@
                 docker-ls
                 delta
                 starship
-                go
-                golangci-lint
                 caddy
                 k9s
                 fira-code
