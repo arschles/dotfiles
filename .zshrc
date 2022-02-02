@@ -91,8 +91,6 @@ if [ -f '/Users/arschles/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/
 # you can install starship from https://starship.rs/
 eval "$(starship init zsh)"
 
-eval "$(thefuck --alias)"
-
 # asdf init: https://asdf-vm.com/#/core-manage-asdf
 # echo -e "\n. $(brew --prefix asdf)/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
 
