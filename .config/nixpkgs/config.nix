@@ -13,6 +13,7 @@
                 hugo
                 kubernetes-helm
                 jq
+		lazygit
                 python39
                 cargo
                 wget
