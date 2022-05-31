@@ -15,7 +15,6 @@
                 jq
 		lazygit
                 python39
-                cargo
                 wget
                 dog
                 curl
