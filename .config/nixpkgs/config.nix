@@ -3,6 +3,7 @@
         myPackages = pkgs.buildEnv {
             name = "ecomaz-packages";
             paths = [
+	        act
                 mage
                 du-dust
                 azure-cli
