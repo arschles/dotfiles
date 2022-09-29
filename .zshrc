@@ -1,4 +1,4 @@
-export PATH=$HOME/bin:/usr/local/go/bin:/usr/local/bin::/home/aaron/.local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/go/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.bin/downloads:$PATH
 
 alias zshconfig="code ~/.zshrc"
 alias grep="rg"
@@ -97,3 +97,7 @@ eval "$(starship init zsh)"
 export PATH="$HOME/.poetry/bin:$PATH"
 
 if [ -e /home/ecomaz/.nix-profile/etc/profile.d/nix.sh ]; then . /home/ecomaz/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+# Wasmer
+export WASMER_DIR="/home/arschles/.wasmer"
+[ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
