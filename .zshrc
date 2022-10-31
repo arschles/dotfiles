@@ -46,7 +46,7 @@ alias tkeylight="keylight -a http://192.168.1.2:9123"
 export PATH=$PATH:$(go env GOROOT)/bin
 
 # go env vars
-export GOPATH=$HOME/go
+export GOPATH=/src/gopath
 export GOSRC=$GOPATH/src
 export GO111MODULE=on
 export PATH=$GOPATH/bin:$PATH
@@ -60,9 +60,14 @@ export KUBERNETES_MINION_MEMORY=6144
 # swift env vars for OS X
 export TOOLCHAINS=swift
 
+# rust env vars
+export CARGO_HOME=/src/cargo_home
+export RUSTUP_HOME=/src/rustup_home
 export EDITOR=nano
-source $HOME/.cargo/env
-export PATH="$HOME/.cargo/bin:$PATH"
+source $CARGO_HOME/env
+export PATH="$CARGO_HOME/bin:$PATH"
+
+
 eval "$(direnv hook zsh)"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 
