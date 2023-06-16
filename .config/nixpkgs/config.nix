@@ -51,6 +51,7 @@
                 procs
                 ripgrep
                 htop
+                hexyl
             ];
         };
     };
