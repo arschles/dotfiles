@@ -1,0 +1,9 @@
+parameters:
+  targets:
+    type: TargetSpec
+
+steps:
+  - name: install
+    script: linux_install/update_apt.sh
+    targets: $targets
+    description: "Setting up and updating apt repositories"

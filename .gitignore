@@ -4,3 +4,4 @@ target
 *.o
 *.class
 *.DS_Store
+/bolt-debug.log

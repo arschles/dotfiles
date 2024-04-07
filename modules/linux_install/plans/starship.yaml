@@ -1,0 +1,9 @@
+parameters:
+  targets:
+    type: TargetSpec
+
+steps:
+  - name: install
+    script: linux_install/install_starship.sh
+    targets: $targets
+    description: "Installing starship"

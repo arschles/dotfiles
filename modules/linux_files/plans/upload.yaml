@@ -1,0 +1,44 @@
+# This is the structure of a simple plan. To learn more about writing
+# YAML plans, see the documentation: http://pup.pt/bolt-yaml-plans
+
+# The description sets the description of the plan that will appear
+# in 'bolt plan show' output.
+description: Upload basic linux files to a target
+
+parameters:
+  targets:
+    description: "The URI of the target node"
+    type: TargetSpec
+  remote_home:
+    description: "The home directory on the remote"
+    type: String
+
+steps:
+  - upload: linux_files/.zshrc
+    destination: "${remote_home}/.zshrc"
+    targets: $targets
+    description: "Upload zshrc to the server"
+  - upload: linux_files/.aliases
+    destination: "${remote_home}/.aliases"
+    targets: $targets
+    description: "Upload .aliases to the server"
+  - upload: linux_files/.bashrc
+    destination: "${remote_home}/.bashrc"
+    targets: $targets
+    description: "Upload .bashrc to the server"
+  - upload: linux_files/.gitconfig
+    destination: "${remote_home}/.gitconfig"
+    targets: $targets
+    description: "Upload .gitconfig to the server"
+  - upload: linux_files/.tmux.conf
+    destination: "${remote_home}/.tmux.conf"
+    targets: $targets
+    description: "Upload .tmux.conf to the server"
+  - name: run_script
+    script: 'mkdir -p "${remote_home}/.config"'
+    targets: $targets
+    description: "ensure .config dir exists"
+  - upload: linux_files/config.nix
+    destination: "${remote_home}/.config/nixpkgs/config.nix"
+    targets: $targets
+    description: "Upload config.nix to the server"

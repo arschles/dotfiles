@@ -1,0 +1,9 @@
+parameters:
+  targets:
+    type: TargetSpec
+
+steps:
+  - name: install
+    script: linux_install/install_azure_cli.sh
+    targets: $targets
+    description: "Installing the Azure CLI tool"
