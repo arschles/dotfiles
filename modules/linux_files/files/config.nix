@@ -1,10 +1,10 @@
 {
     packageOverrides = pkgs: with pkgs; {
         myPackages = pkgs.buildEnv {
-            name = "ecomaz-packages";
+            name = "packages";
             paths = [
-	        mosh
-	        act
+                mosh
+                act
                 mage
                 du-dust
                 azure-cli
@@ -15,7 +15,7 @@
                 hugo
                 kubernetes-helm
                 jq
-		lazygit
+                lazygit
                 python39
                 wget
                 dog
@@ -26,7 +26,6 @@
                 hivemind
                 overmind
                 bat
-                exa
                 lsd
                 ripgrep
                 duf
@@ -46,7 +45,7 @@
                 caddy
                 k9s
                 fira-code
-                exa
+                eza
                 asciinema
                 procs
                 ripgrep

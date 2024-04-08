@@ -2,6 +2,7 @@ plan linux_install::all(TargetSpec $targets) {
   $plans = [
     'linux_install::update_apt',
     'linux_install::zsh',
+    'linux_install::nix',
     'linux_install::starship',
     'linux_install::rust',
     'linux_install::go',
