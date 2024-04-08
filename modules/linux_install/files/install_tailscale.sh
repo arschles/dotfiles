@@ -2,5 +2,5 @@
 
 set -e
 
-sudo apt-get install tailscale
+sudo apt-get install -y tailscale
 sudo tailscale up

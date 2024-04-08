@@ -1,8 +1,18 @@
 plan linux_install::all(TargetSpec $targets) {
-  run_plan('linux_install::update_apt', {'targets' => $targets})
-  run_plan('linux_install::zsh', {'targets' => $targets})
-  run_plan('linux_install::az_cli', {'targets' => $targets})
-  run_plan('linux_install::bin', {'targets' => $targets})
-  run_plan('linux_install::starship', {'targets' => $targets})
-  run_plan('linux_install::tailscale', {'targets' => $targets})
+  $plans = [
+    'linux_install::update_apt',
+    'linux_install::zsh',
+    'linux_install::starship',
+    'linux_install::rust',
+    'linux_install::go',
+    'linux_install::anaconda',
+    'linux_install::az_cli',
+    'linux_install::bin',
+    'linux_install::tailscale',
+  ]
+
+  # parallelize($plans) |$plan| {
+  $plans.each |$plan| {  
+    run_plan($plan, {'targets' => $targets})
+  }
 }

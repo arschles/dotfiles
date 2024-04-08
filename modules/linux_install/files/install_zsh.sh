@@ -2,4 +2,4 @@
 
 set -e
 
-sudo apt-get install zsh
+sudo apt-get install -y zsh
