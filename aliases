@@ -1,0 +1,7 @@
+alias clr=clear
+alias gpush="git push"
+alias gcomm="git commit -m"	
+alias gs="git status"
+alias gco="git checkout"
+alias gf="git fetch"
+alias gadd="git add"
